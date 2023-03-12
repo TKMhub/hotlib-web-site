@@ -11,7 +11,11 @@ export default function Home() {
       <Layout title="home">
         {/* 1ページ目************************************************************/}
         <section className={styles.contentsWrapper} id="fstpg">
-          <TextEffect title="Web Design System" className="styles.titleCnter" id="fstpg"/>
+          <TextEffect
+            title="Web Design System"
+            className={styles.titleCnter}
+            id="fstpg"
+          />
           <p className={styles.fromhotLib}>from hotLib</p>
           {/* ↓スクロール指示 */}
           <a className={styles.Scroll} href="#sndpg">
@@ -21,7 +25,11 @@ export default function Home() {
 
         {/* 2ページ目************************************************************/}
         <section className={styles.contentsWrapper} id="sndpg">
-          <TextEffect title="Web Design" className="styles.titleCnter" id="sndpg"/>
+          <TextEffect
+            title="Web Design"
+            className={styles.titleDesign}
+            id="sndpg"
+          />
           {/* コンテンツ */}
           <a className={styles.Scroll} href="#thdpg">
             Scroll
@@ -30,7 +38,11 @@ export default function Home() {
 
         {/* 3ページ目************************************************************/}
         <section className={styles.contentsWrapper} id="thdpg">
-          <TextEffect title="Web System" className="styles.titleCnter"  id="thdpg"/>
+          <TextEffect
+            title="Web System"
+            className={styles.titleCnter}
+            id="thdpg"
+          />
           {/* コンテンツ */}
           <a className={styles.Scroll} href="#fthpg">
             Scroll
@@ -39,7 +51,7 @@ export default function Home() {
 
         {/* 4ページ目************************************************************/}
         <section className={styles.contentsWrapper} id="fthpg">
-          <TextEffect title="Works" className="styles.titleCnter"  id="fthpg"/>
+          <TextEffect title="Works" className={styles.titleCnter} id="fthpg" />
           {/* コンテンツ */}
           <a className={styles.Scroll} href="#lastpg">
             Scroll
@@ -48,13 +60,12 @@ export default function Home() {
 
         {/* 最終ページ************************************************************/}
         <section className={styles.contentsWrapper} id="lastpg">
-          <TextEffect title="About" className="styles.titleCnter"  id="lastpg"/>
+          <TextEffect title="About" className={styles.titleCnter} id="lastpg" />
           {/* コンテンツ */}
           <a className={styles.Scroll} href="#fstpg">
             Scroll
           </a>
         </section>
-       
       </Layout>
     </>
   );

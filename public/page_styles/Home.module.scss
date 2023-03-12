@@ -96,11 +96,12 @@
   // TextEffectコンポーネント用のスタイル
   // Web Design
   
-  .titleCnter {
+  .titleDesign {
     position: relative;
     color: $mainGray;
     top: 35%;
-    font-size: 6rem;
+    font-size: 10rem;
+    background-color: aquamarine;
     font-style: italic;
     text-align: center;
     transition: color 0.2s linear;
