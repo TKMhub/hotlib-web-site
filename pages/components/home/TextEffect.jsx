@@ -36,7 +36,7 @@ const TextEffect = ({ title, id }) => {
     
           iteration += 1 / 3;
           //時間指定
-        }, 10);
+        }, 1);
       }
     }
     

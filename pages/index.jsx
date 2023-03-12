@@ -40,7 +40,7 @@ export default function Home() {
         {/* 4ページ目************************************************************/}
         <section className={styles.contentsWrapper} id="fthpg">
           <TextEffect title="about" className="styles.titleCnter"  id="fthpg"/>
-          コンテンツ
+          {/* コンテンツ */}
           <a className={styles.Scroll} href="#lastpg">
             Scroll
           </a>
