@@ -1,0 +1,139 @@
+@import "styles/color.module.scss";
+
+// ヘッダー
+.header {
+  z-index: 100;
+  background-color: $mainGray;
+  // ヘッダー帯の縦幅
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+
+    .link {
+      display: inline-block;
+      text-align: center;
+      width: 100px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: left;
+      color: $mainWhite;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      width: 100%;
+      height: auto;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: right;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        margin: 10px 0;
+      }
+
+      li a {
+        color: $mainWhite;
+        // メニューの文字サイズ　HOME VISION WORKS APPROACH CONTACT
+        font-size: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        // アンダーライン
+        position: relative;
+        padding-bottom: 5px;
+
+        transition: color 0.1s linear;
+      }
+
+      li a:hover {
+        transition-delay: 0.1s;
+        color: $mainOrange;
+      }
+
+      // アンダーラインを左から右へ
+      li a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 1px;
+        background-color: $mainOrange;
+        transition: width 0.3s ease-in-out;
+      }
+
+      li a:hover::after {
+        width: 100%;
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      .menu {
+        flex-direction: row;
+
+        li {
+          margin: 0 20px;
+        }
+
+        li a:hover::after {
+          border-bottom: none;
+          color: $mainOrange;
+        }
+      }
+
+      #menu-icon {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      .menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+
+        li {
+          margin: 10px 0;
+        }
+
+        li a {
+          display: block;
+          padding: 10px 0;
+          border-bottom: 1px solid $mainWhite;
+        }
+      }
+
+      #menu-icon:checked ~ .menu {
+        display: block;
+      }
+    }
+  }
+}
+
+.footer {
+  padding: 30px;
+  text-align: center;
+}

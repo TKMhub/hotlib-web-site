@@ -1,1 +1,10 @@
 /* さにたらいずcss(リセットcssをつけて)このコメントは削除してね！ */
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Maven+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Maven Pro', sans-serif;
+}
