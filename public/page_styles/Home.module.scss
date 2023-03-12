@@ -1,15 +1,16 @@
 @import "styles/color.module.scss";  //カラーの読み込み
 @import "../components_styles/Scroll.module.scss";  //スクロール指示の読み込み
 
-// 1ページ目************************************************************
-// Web Design System
+// 全体************************************************************
 .contentsWrapper {
   position: relative;
   justify-content: center;
   align-items: center;
   height: 100vh;
   
+  // 1ページ目************************************************************
   // TextEffectコンポーネント用のスタイル
+  // Web Design System
   .titleCnter {
     position: relative;
     color: $mainGray;
@@ -90,7 +91,83 @@
       transform-origin: 0 100%;
     }
   }
+  
+  // 2ページ目************************************************************
+  // TextEffectコンポーネント用のスタイル
+  // Web Design
+  
+  .titleDesign {
+    position: relative;
+    color: $mainGray;
+    top: 35%;
+    font-size: 10rem;
+    background-color: aquamarine;
+    font-style: italic;
+    text-align: center;
+    transition: color 0.2s linear;
+    
+    &:hover {
+      cursor: cell;
+      transition-delay: 0.2s;
+      color: $mainOrange;
+    }
+  }
+  // 3ページ目************************************************************
+  // TextEffectコンポーネント用のスタイル
+  // Web System
+  .titleCnter {
+    position: relative;
+    color: $mainGray;
+    top: 35%;
+    font-size: 6rem;
+    font-style: italic;
+    text-align: center;
+    transition: color 0.2s linear;
+    
+    &:hover {
+      cursor: cell;
+      transition-delay: 0.2s;
+      color: $mainOrange;
+    }
+  }
+  
+  // 4ページ目************************************************************
+  // TextEffectコンポーネント用のスタイル
+  // Works
+  .titleCnter {
+    position: relative;
+    color: $mainGray;
+    top: 35%;
+    font-size: 6rem;
+    font-style: italic;
+    text-align: center;
+    transition: color 0.2s linear;
+    
+    &:hover {
+      cursor: cell;
+      transition-delay: 0.2s;
+      color: $mainOrange;
+    }
+  }
+  
+  // 最終ページ目************************************************************
+  // TextEffectコンポーネント用のスタイル
+  // About
+  .titleCnter {
+    position: relative;
+    color: $mainGray;
+    top: 35%;
+    font-size: 6rem;
+    font-style: italic;
+    text-align: center;
+    transition: color 0.2s linear;
+    
+    &:hover {
+      cursor: cell;
+      transition-delay: 0.2s;
+      color: $mainOrange;
+    }
+  }
+  
 }
 
-
-// 2ページ目************************************************************

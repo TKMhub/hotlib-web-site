@@ -6,7 +6,7 @@ import TextEffect from "./components/home/TextEffect";
 function Vision() {
   return (
     <>
-      <Layout title="home">
+      <Layout title="Comming soon...">
         <div className={styles.centerImage}>
           <div className={styles.contentsBox}>
             <div className={styles.pulseWrapper}>

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import Styles from "/public/page_styles/Home.module.scss";
+import styles from "/public/page_styles/Home.module.scss";
 
 // 文字エフェクト用
-const TextEffect = ({ title, id }) => {
+const TextEffect = ({ title, className, id }) => {
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; 
   const [titleText, setTitleText] = useState(title);
 
@@ -36,7 +36,7 @@ const TextEffect = ({ title, id }) => {
     
           iteration += 1 / 3;
           //時間指定
-        }, 10);
+        }, 1);
       }
     }
     
@@ -51,7 +51,7 @@ const TextEffect = ({ title, id }) => {
   }, [id]);
 
   return (
-    <h1 id={id} className={Styles.titleCnter} data-value={titleText}>
+    <h1 id={id} className={className} data-value={titleText}>
       {title}
     </h1>
   );
