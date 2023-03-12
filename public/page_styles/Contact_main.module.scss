@@ -1,0 +1,13 @@
+@import "styles/color.module.scss";  //カラーの読み込み
+@import "../components_styles/Scroll.module.scss";  //スクロール指示の読み込み
+
+.contactWrapper{
+    margin: 70px 5%;
+    background-color:$mainOrange;
+
+    h1{
+        text-align: center;
+        margin: 10px 0px;
+        font-size: 64px;
+    }
+}
