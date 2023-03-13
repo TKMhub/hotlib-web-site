@@ -1,25 +1,24 @@
-@import "styles/color.module.scss";  //カラーの読み込み
-@import "../components_styles/Scroll.module.scss";  //スクロール指示の読み込み
+@import "styles/color.module.scss"; //カラーの読み込み
+@import "../components_styles/Scroll.module.scss"; //スクロール指示の読み込み
 
-// 全体************************************************************
-.contentsWrapper {
+// 1ページ目************************************************************
+.contentsCenterWrapper {
   position: relative;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  
-  // 1ページ目************************************************************
-  // TextEffectコンポーネント用のスタイル
+
+  // TopのTextEffectコンポーネント用のスタイル（Topのみ）
   // Web Design System
-  .titleCnter {
+  .titleCenter {
     position: relative;
     color: $mainGray;
-    top: 35%;
+    top: 30%;
     font-size: 6rem;
     font-style: italic;
     text-align: center;
     transition: color 0.2s linear;
-    
+
     &:hover {
       cursor: cell;
       transition-delay: 0.2s;
@@ -29,83 +28,35 @@
   .fromhotLib {
     position: relative;
     color: $mainGray;
-    top: 35%;
+    top: 30%;
     font-size: 3rem;
     font-style: italic;
     text-align: center;
     transition: color 0.15s linear;
-    padding-top: 70px;
-    
+
     &:hover {
       cursor: cell;
       transition-delay: 0.15s;
       color: $mainOrange;
     }
   }
+}
+
+// 2ページ目以降************************************************************
+.contentsWrapper {
+  position: relative;
+  height: 100vh;
   
-  .fstAfter {
-    display: inline-block;
-    position: absolute;
-    right: 40px;
-    bottom: 0;
-    z-index: 2;
-    padding: 10px 10px 110px;
-    overflow: hidden;
-    color: $mainOrange;
-    font-size: 20px;
-    font-family: "Josefin Sans", sans-serif;
-    line-height: 1;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    writing-mode: vertical-lr;
-    
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      width: 1px;
-      height: 100px;
-      border-left: 1px solid $mainOrange;
-      background-color: $mainOrange;
-      animation: sdl 1.5s cubic-bezier(1, 0, 0, 1) infinite;
-    }
-  }
-  
-  @keyframes sdl {
-    0% {
-      transform: scale(1, 0);
-      transform-origin: 0 0;
-    }
-    50% {
-      transform: scale(1, 1);
-      transform-origin: 0 0;
-    }
-    50.1% {
-      transform: scale(1, 1);
-      transform-origin: 0 100%;
-    }
-    100% {
-      transform: scale(1, 0);
-      transform-origin: 0 100%;
-    }
-  }
-  
-  // 2ページ目************************************************************
-  // TextEffectコンポーネント用のスタイル
-  // Web Design
-  
-  .titleDesign {
+  // 以降のTextEffectコンポーネント用のスタイル（共通）
+  .titleDetail {
     position: relative;
     color: $mainGray;
-    top: 35%;
-    font-size: 10rem;
-    background-color: aquamarine;
+    top: 15%;
+    margin-left:70px;
+    font-size: 3rem;
     font-style: italic;
-    text-align: center;
     transition: color 0.2s linear;
-    
+
     &:hover {
       cursor: cell;
       transition-delay: 0.2s;
@@ -113,61 +64,12 @@
     }
   }
   // 3ページ目************************************************************
-  // TextEffectコンポーネント用のスタイル
-  // Web System
-  .titleCnter {
-    position: relative;
-    color: $mainGray;
-    top: 35%;
-    font-size: 6rem;
-    font-style: italic;
-    text-align: center;
-    transition: color 0.2s linear;
-    
-    &:hover {
-      cursor: cell;
-      transition-delay: 0.2s;
-      color: $mainOrange;
-    }
-  }
   
   // 4ページ目************************************************************
-  // TextEffectコンポーネント用のスタイル
-  // Works
-  .titleCnter {
-    position: relative;
-    color: $mainGray;
-    top: 35%;
-    font-size: 6rem;
-    font-style: italic;
-    text-align: center;
-    transition: color 0.2s linear;
-    
-    &:hover {
-      cursor: cell;
-      transition-delay: 0.2s;
-      color: $mainOrange;
-    }
-  }
   
   // 最終ページ目************************************************************
-  // TextEffectコンポーネント用のスタイル
-  // About
-  .titleCnter {
-    position: relative;
-    color: $mainGray;
-    top: 35%;
-    font-size: 6rem;
-    font-style: italic;
-    text-align: center;
-    transition: color 0.2s linear;
-    
-    &:hover {
-      cursor: cell;
-      transition-delay: 0.2s;
-      color: $mainOrange;
-    }
-  }
-  
+
+
+
 }
 
